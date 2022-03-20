@@ -21,6 +21,11 @@ const GoReturn = keyframes`
 const Video = styled.video`
     max-width: 50%;
     border-radius: 5px;
+
+    @media (max-width: 700px) {
+        margin: 50px 0;
+        max-width: 90%;
+    }
 `;
 
 const Project = styled.div`
@@ -73,6 +78,17 @@ const Project = styled.div`
         color: ${props => props.theme.colors.orange};
         cursor: pointer;
         text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+        div {
+            flex-direction: column;
+        }
+
+        ul {
+            margin: 0;
+            max-width: 90%;
+        }
     }
 `;
 

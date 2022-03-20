@@ -27,6 +27,12 @@ const Footer = styled.footer`
     a:hover {
         color: ${props => props.theme.colors.orange};
     }
+
+    @media (max-width: 700px) {
+        h4, a {
+            font-size: 30px;
+        }
+    }
 `;
 
 export default Footer;

@@ -25,11 +25,20 @@ const Call = styled.section`
     height: calc(100vh - 60px);
     display: flex;
     background-color: ${props => props.theme.colors.blue};
+
+    @media (max-width: 700px) {
+        flex-direction: column;
+    }
 `;
 
 const CallImage = styled.div`
     width: 40%;
     background: url("./img/felipe-laskos.png") center / cover no-repeat;
+
+    @media (max-width: 700px) {
+        width: 100%;
+        height: 60vh;
+    }
 `;
 
 const CallText = styled.div`
@@ -59,6 +68,15 @@ const CallText = styled.div`
         animation-name: ${underlined};
         animation-duration: 3s;
         animation-iteration-count: infinite;
+    }
+
+    @media (max-width: 700px) {
+        width: 100%;
+        height: 30vh;
+
+        h2 {
+            font-size: 40px;
+        }
     }
 `;
 
