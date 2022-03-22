@@ -3,23 +3,6 @@ import styled, { css } from "styled-components";
 const Header = styled.header`
     z-index: 3;
     ${(props) => {
-        /*
-        if(props.fixed) {
-            return css`
-                top: -60px !important;
-                transform: translateY(100%);
-                position: fixed;
-                background-color: ${props => props.theme.colors.dark_blue};
-            `;
-        }else {
-            return css`
-                top: 0 !important;
-                transform: translateY(0);
-                position: static;
-                background-color: ${props => props.theme.colors.blue};
-            `;
-        }
-        */
         if(props.fixed.screenPosition > props.fixed.screenHeight) {
             return css`
                 top: -60px !important;
