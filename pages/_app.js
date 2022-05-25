@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: #524EB7;
   }
 
-  .icon {
+  .icon-header {
     width: 30px;
     margin-left: 30px;
     cursor: pointer;
@@ -19,13 +19,17 @@ const GlobalStyle = createGlobalStyle`
     transition: color 0.25s;
   }
 
-  .icon:hover {
+  .icon-header:hover {
     color: #E97B64;
   }
 
   a {
     text-decoration: none;
     cursor: auto;
+  }
+
+  body {
+    scroll-behavior: smooth;
   }
 `
 
