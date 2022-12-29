@@ -36,6 +36,7 @@ const Project = styled.div`
     color: ${props => props.theme.colors.white};
 
     div {
+        padding-top: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -82,6 +83,7 @@ const Project = styled.div`
 
     @media (max-width: 700px) {
         div {
+            padding-top: 0;
             flex-direction: column;
         }
 

@@ -88,7 +88,7 @@ export default function Home() {
         <List>
           <h3>Informações</h3>
           <ul>
-            <li>Tenho 15 anos</li>
+            <li>Tenho 16 anos</li>
             <li>Não tenho experiência profissional (nunca fui contratado)</li>
             <li>Gosto de aprender coisas novas, todo conhecimento novo é bem-vindo</li>
             <li>Sempre busco dar o meu melhor em tudo o que eu faço</li>
