@@ -121,7 +121,7 @@ export default function Home() {
           <div>
             <Video src="./vid/PodPato (Front e Back).webm" controls />
             <ul>
-              <li>Link: <a href="./" target="_blank">Temporariamente o site não está disponível</a></li>
+              <li>Link: <a href="https://podpato.onrender.com" target="_blank">https://podpato.onrender.com</a></li>
               <li>Utiliza diversos módulos do Node.js</li>
               <li>Sistema de contas com e-mail e senha, registro e login</li>
               <li>Aplicação com Banco de dados MongoDB, sendo controlado através do Mongoose</li>
