@@ -69,4 +69,42 @@ const About = styled.section`
     }
 `;
 
-export { About, List };
+export default () => {
+    return (
+        <About>
+            <h2>Sobre Mim</h2>
+            <List>
+                <h3>Habilidades</h3>
+                <ul>
+                    <li>Front-End: HTML, CSS, JavaScript</li>
+                    <li>Back-End: Node.js, Express, MongoDB</li>
+                </ul>
+            </List>
+            <List>
+                <h3>Estou a procura...</h3>
+                <ul>
+                    <li>De uma vaga para desenvolvedor Front-end Júnior</li>
+                </ul>
+            </List>
+            <List>
+                <h3>Estudos e idiomas</h3>
+                <ul>
+                    <li>Estudando no 2º Ano do Ensino Médio </li>
+                    <li>Cursei front-end na Alura (através do programa Edu-Tech)</li>
+                    <li>Aprendendo back-end pela Internet</li>
+                    <li>Começando a aprender React e Python</li>
+                    <li>Inglês Básico</li>
+                </ul>
+            </List>
+            <List>
+                <h3>Informações</h3>
+                <ul>
+                    <li>Tenho 16 anos</li>
+                    <li>Não tenho experiência profissional (nunca fui contratado)</li>
+                    <li>Gosto de aprender coisas novas, todo conhecimento novo é bem-vindo</li>
+                    <li>Sempre busco dar o meu melhor em tudo o que eu faço</li>
+                </ul>
+            </List>
+        </About>
+    );
+};

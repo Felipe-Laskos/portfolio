@@ -123,4 +123,45 @@ const Projects = styled.section`
     }
 `;
 
-export { Projects, Project, Video };
+export default () => {
+    return (
+            <Projects>
+                <h2>Projetos</h2>
+                <Project>
+                    <h3>PodPato (Versão Front-end)</h3>
+                    <h4>HTML, CSS, JavaScript</h4>
+                    <p>Site para ver os melhores podcasts do Youtube!</p>
+                    <div>
+                        <Video src="./vid/PodPato (Versão Front-end).webm" controls />
+                        <ul>
+                            <li>Link: <a href="https://felipe-laskos.github.io/podpato/" target="_blank">https://felipe-laskos.github.io/podpato/</a></li>
+                            <li>Front-End: HTML, CSS, JavaScript</li>
+                            <li>API do Youtube</li>
+                            <li>Modais do Bootstrap</li>
+                            <li>Bastante JavaScript para controle da API, resultando em um site com muitas funcionalidades dentro dos podcasts</li>
+                            <li>Sistema de vídeos salvos</li>
+                            <li>Sistema de histórico de vídeos</li>
+                        </ul>
+                    </div>
+                </Project>
+                <Project>
+                    <h3>PodPato (Front e Back)</h3>
+                    <h4>HTML, CSS, JavaScript, Node.js, MongoDB</h4>
+                    <p>Tudo que a versão somente front-end entrega, porém com sistema de criação e login de contas, sistema de likes e comentários em cada podcast com banco de dados MongoDB!</p>
+                    <div>
+                        <Video src="./vid/PodPato (Front e Back).webm" controls />
+                        <ul>
+                            <li>Link: <a href="https://podpato.onrender.com" target="_blank">https://podpato.onrender.com</a></li>
+                            <li>Utiliza diversos módulos do Node.js</li>
+                            <li>Sistema de contas com e-mail e senha, registro e login</li>
+                            <li>Aplicação com Banco de dados MongoDB, sendo controlado através do Mongoose</li>
+                            <li>Autenticação com o módulo Passport</li>
+                            <li>Sistema de Likes e Dislikes</li>
+                            <li>Sistema de comentários, que podem ser criados, editados e excluídos</li>
+                            <li>Salvos e Histórico dos podcasts em conjunto com a conta logada</li>
+                        </ul>
+                    </div>
+                </Project>
+        </Projects>
+    );
+};

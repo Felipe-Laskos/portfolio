@@ -1,4 +1,9 @@
 import styled, { css } from "styled-components";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
+
+library.add(faGithub, faLinkedin);
 
 const Header = styled.header`
     z-index: 3;
@@ -48,4 +53,16 @@ const Header = styled.header`
     }
 `;
 
-export default Header;
+export default ({ fixed }) => {
+    return (
+        <Header fixed={fixed}>
+            <h2>Felipe Laskos</h2>
+            <a href="https://github.com/Felipe-Laskos" target="_blank">
+                <FontAwesomeIcon icon={["fa-brands", "fa-github"]} className="icon icon-header" />
+            </a>
+            <a href="https://www.linkedin.com/in/felipe-matheus-laskos-068667219/" target="_blank">
+                <FontAwesomeIcon icon={["fa-brands", "fa-linkedin"]} className="icon icon-header" />
+            </a>
+        </Header>
+    );
+};

@@ -87,4 +87,17 @@ const CallAlign = styled.div`
     justify-content: baseline;
 `;
 
-export { Call, CallImage, CallText, CallAlign };
+export default ({ margin }) => {
+    return (
+        <Call margin={margin}>
+            <CallImage />
+            <CallText>
+                <CallAlign>
+                    <h2>Felipe Laskos</h2>
+                    <h2>Desenvolvedor Front-end</h2>
+                    <h2 className='underlined'>Júnior</h2>
+                </CallAlign>    
+            </CallText>
+        </Call>
+    );
+};

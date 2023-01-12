@@ -35,4 +35,11 @@ const Footer = styled.footer`
     }
 `;
 
-export default Footer;
+export default () => {
+    return (
+        <Footer>
+            <h3>Contato via:</h3>
+            <h4>e-mail: <a href="mailto:felipematheuslaskos@gmail.com">felipematheuslaskos@gmail.com</a></h4>
+        </Footer>
+    );
+};
