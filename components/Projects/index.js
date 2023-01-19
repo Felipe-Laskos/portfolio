@@ -105,7 +105,6 @@ const Projects = styled.section`
         font-size: 40px;
         color: ${props => props.theme.colors.white};
         position: relative;
-        overflow: hidden;
     }
 
     h2::after {
@@ -114,7 +113,7 @@ const Projects = styled.section`
         background-color: ${props => props.theme.colors.light_blue};
         width: 25%;
         position: absolute;
-        bottom: 0;
+        bottom: -5px;
         left: 75%;
         animation-name: ${GoReturn};
         animation-duration: 10s;

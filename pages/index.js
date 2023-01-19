@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import React from 'react';
 import Head from '../components/Head';
 import Header from '../components/Header';
@@ -55,7 +54,7 @@ export default function Home() {
         <CallText>
           <CallAlign>
             <h2>Felipe Laskos</h2>
-            <h2>Desenvolvedor Front-end</h2>
+            <h2>Desenvolvedor Web</h2>
             <h2 className='underlined'>Júnior</h2>
           </CallAlign>
         </CallText>
@@ -65,23 +64,24 @@ export default function Home() {
         <List>
           <h3>Habilidades</h3>
           <ul>
-            <li>Front-End: HTML, CSS, JavaScript</li>
+            <li>Front-End: HTML, CSS, JavaScript, React, Next.js</li>
             <li>Back-End: Node.js, Express, MongoDB</li>
+            <li>Outros: Python</li>
           </ul>
         </List>
         <List>
           <h3>Estou a procura...</h3>
           <ul>
-            <li>De uma vaga para desenvolvedor Front-end Júnior</li>
+            <li>De uma possível oportunidade de emprego como desenvolvedor web</li>
           </ul>
         </List>
         <List>
           <h3>Estudos e idiomas</h3>
           <ul>
-            <li>Estudando no 2º Ano do Ensino Médio </li>
+            <li>Estudando no 3º Ano do Ensino Médio </li>
             <li>Cursei front-end na Alura (através do programa Edu-Tech)</li>
             <li>Aprendendo back-end pela Internet</li>
-            <li>Começando a aprender React e Python</li>
+            <li>Aprimorando minhas habilidades em React e Python</li>
             <li>Inglês Básico</li>
           </ul>
         </List>
@@ -89,9 +89,9 @@ export default function Home() {
           <h3>Informações</h3>
           <ul>
             <li>Tenho 16 anos</li>
-            <li>Não tenho experiência profissional (nunca fui contratado)</li>
+            <li>Não tenho experiência profissional</li>
             <li>Gosto de aprender coisas novas, todo conhecimento novo é bem-vindo</li>
-            <li>Sempre busco dar o meu melhor em tudo o que eu faço</li>
+            <li>Sempre busco dar o meu melhor em tudo o que faço</li>
           </ul>
         </List>
       </About>
@@ -129,6 +129,22 @@ export default function Home() {
               <li>Sistema de Likes e Dislikes</li>
               <li>Sistema de comentários, que podem ser criados, editados e excluídos</li>
               <li>Salvos e Histórico dos podcasts em conjunto com a conta logada</li>
+            </ul>
+          </div>
+        </Project>
+        <Project>
+          <h3>Jogo da Velha</h3>
+          <h4>HTML, CSS, JavaScript, React</h4>
+          <p>Jogo da velha criado utilizando a framework React!</p>
+          <div>
+            <Video src="./vid/jogo-da-velha.webm" controls />
+            <ul>
+              <li>Link: <a href="https://felipe-laskos-tic-tac-toe.vercel.app" target="_blank">https://felipe-laskos-tic-tac-toe.vercel.app</a></li>
+              <li>Trabalha com o sistema de componentes do React</li>
+              <li>Utiliza os Hooks disponibilizados pela framework (States e Effects)</li>
+              <li>Os jogadores escolhem X ou O antes de jogar</li>
+              <li>Os jogadores podem mudar seus nicks</li>
+              <li>Quando o jogo acaba, pode ser reiniciado</li>
             </ul>
           </div>
         </Project>

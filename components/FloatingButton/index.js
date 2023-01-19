@@ -4,7 +4,7 @@ const FloatingButton = styled.button`
     color: ${props => props.theme.colors.white};
     cursor: pointer;
     background-color: ${props => props.theme.colors.dark_blue};
-    border-radius: 50%;
+    border-radius: 10px;
     padding: 5px 8px;
     border: none;
     position: fixed;
@@ -20,10 +20,11 @@ const FloatingButton = styled.button`
         }
     }}
     right: 10px;
-    transition: color 0.25s, border-color 0.25s, bottom 0.5s;
+    transition: color 0.25s, border-color 0.25s, bottom 0.5s, transform 0.25s;
 
     &:hover{
         color: ${props => props.theme.colors.orange};
+        transform: translateY(-3px);
     }
 
     .icon {
