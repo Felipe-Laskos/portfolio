@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .icon-header {
-    width: 30px;
+    font-size: 30px;
     margin-left: 30px;
     cursor: pointer;
     color: #F6F6F8;

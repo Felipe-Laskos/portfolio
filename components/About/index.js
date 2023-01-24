@@ -35,6 +35,11 @@ const List = styled.div`
         font-size: 18px;
     }
     
+    @media screen and (max-width: 900px) {
+        h3 {
+            text-align: center;
+        }
+    }
 `;
 
 const About = styled.section`

@@ -46,6 +46,12 @@ const Header = styled.header`
         align-items: center;
         justify-content: center;
     }
+
+    @media screen and (max-width: 300px) {
+        h2 {
+            font-size: 30px;
+        }
+    }
 `;
 
 export default Header;

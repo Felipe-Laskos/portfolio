@@ -28,41 +28,41 @@ const Video = styled.video`
     }
 `;
 
-const Project = styled.div`
-    width: 90%;
-    padding: 60px 0;
-    margin: 0 auto;
-    background-color: ${props => props.theme.colors.blue};
-    color: ${props => props.theme.colors.white};
 
-    div {
-        padding-top: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+const Languages = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+`;
+
+const Language = styled.div`
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 15px;
+    
+    .icon {
+        width: 35px;
+        font-size: 35px;
+        height: 60px;
     }
 
-    h3 {
-        font-size: 30px;
+    .name {
+        font-size: 15px;
+        color: ${props => props.theme.colors.white};
         font-family: 'Sura', serif;
-        text-align: center;
+        letter-spacing: 1px;
     }
+`;
 
-    h4 {
-        font-weight: 500;
-        font-size: 25px;
-        font-family: 'Sura', serif;
-        text-align: center;
-        display: block;
-        margin-bottom: 15px;
-    }
-
-    p {
-        font-family: 'Quicksand', sans-serif;
-        font-size: 20px;
-        text-align: center;
-        margin-bottom: 15px;
-    }
+const Details = styled.div`
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     ul {
         margin-left: 50px;
@@ -82,15 +82,34 @@ const Project = styled.div`
     }
 
     @media (max-width: 700px) {
-        div {
-            padding-top: 0;
-            flex-direction: column;
-        }
+        padding-top: 0;
+        flex-direction: column;
 
         ul {
             margin: 0;
             max-width: 90%;
         }
+    }
+`;
+
+const Project = styled.div`
+    width: 90%;
+    padding: 60px 0;
+    margin: 0 auto;
+    background-color: ${props => props.theme.colors.blue};
+    color: ${props => props.theme.colors.white};
+
+    h3 {
+        font-size: 30px;
+        font-family: 'Sura', serif;
+        text-align: center;
+    }
+
+    p {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 15px;
     }
 `;
 
@@ -122,4 +141,4 @@ const Projects = styled.section`
     }
 `;
 
-export { Projects, Project, Video };
+export { Projects, Project, Video, Languages, Details, Language };

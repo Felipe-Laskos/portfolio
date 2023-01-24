@@ -5,13 +5,11 @@ import Footer from '../components/Footer';
 import FloatingButton from '../components/FloatingButton';
 import { Call, CallText, CallImage, CallAlign } from '../components/Call';
 import { About, List } from '../components/About';
-import { Projects, Project, Video } from '../components/Projects';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { Projects, Project, Video, Languages, Details, Language } from '../components/Projects';
 
-library.add(faGithub, faLinkedin, faArrowUp);
+import { FaGithub, FaLinkedin, FaNodeJs, FaJs, FaReact, FaHtml5, FaCss3, FaArrowUp } from 'react-icons/fa';
+import { SiMongodb } from 'react-icons/si';
+import { TbBrandNextjs } from 'react-icons/tb';
 
 export default function Home() {
   const [fixedHeader, setFixedHeader] = React.useState({
@@ -34,10 +32,10 @@ export default function Home() {
       <Header fixed={fixedHeader}>
         <h2>Felipe Laskos</h2>
         <a href="https://github.com/Felipe-Laskos" target="_blank">
-          <FontAwesomeIcon icon={["fa-brands", "fa-github"]} className="icon icon-header" />
+          <FaGithub className="icon icon-header"/>
         </a>
         <a href="https://www.linkedin.com/in/felipe-matheus-laskos-068667219/" target="_blank">
-          <FontAwesomeIcon icon={["fa-brands", "fa-linkedin"]} className="icon icon-header" />
+          <FaLinkedin className="icon icon-header" />
         </a>
       </Header>
       <FloatingButton title='Ir ao topo' show={fixedHeader} onClick={(event) => {
@@ -47,7 +45,7 @@ export default function Home() {
           behavior: 'smooth'
         });
       }} >
-        <FontAwesomeIcon icon={["fa-solid", "fa-arrow-up"]} className="icon" />
+        <FaArrowUp className="icon" />
       </FloatingButton>
       <Call margin={fixedHeader}>
         <CallImage />
@@ -99,9 +97,22 @@ export default function Home() {
         <h2>Projetos</h2>
         <Project>
           <h3>PodPato (Versão Front-end)</h3>
-          <h4>HTML, CSS, JavaScript</h4>
+          <Languages>
+            <Language title='Html5'>
+              <FaHtml5 className="icon" />
+              <h4 className="name">Html5</h4>
+            </Language>
+            <Language title="Css3">
+              <FaCss3 className="icon" />
+              <h4 className="name">Css3</h4>
+            </Language>
+            <Language title="JavaScript">
+              <FaJs className="icon" />
+              <h4 className="name">JavaScript</h4>
+            </Language>
+          </Languages>
           <p>Site para ver os melhores podcasts do Youtube!</p>
-          <div>
+          <Details>
             <Video src="./vid/PodPato (Versão Front-end).webm" controls />
             <ul>
               <li>Link: <a href="https://felipe-laskos.github.io/podpato/" target="_blank">https://felipe-laskos.github.io/podpato/</a></li>
@@ -112,13 +123,34 @@ export default function Home() {
               <li>Sistema de vídeos salvos</li>
               <li>Sistema de histórico de vídeos</li>
             </ul>
-          </div>
+          </Details>
         </Project>
         <Project>
           <h3>PodPato (Front e Back)</h3>
-          <h4>HTML, CSS, JavaScript, Node.js, MongoDB</h4>
+          <Languages>
+            <Language title='Html5'>
+              <FaHtml5 className="icon" />
+              <h4 className="name">Html5</h4>
+            </Language>
+            <Language title="Css3">
+              <FaCss3 className="icon" />
+              <h4 className="name">Css3</h4>
+            </Language>
+            <Language title="JavaScript">
+              <FaJs className="icon" />
+              <h4 className="name">JavaScript</h4>
+            </Language>
+            <Language title="NodeJS">
+              <FaNodeJs className="icon" />
+              <h4 className="name">NodeJS</h4>
+            </Language>
+            <Language title="MongoDB">
+              <SiMongodb className="icon" />
+              <h4 className="name">MongoDB</h4>
+            </Language>
+          </Languages>
           <p>Tudo que a versão somente front-end entrega, porém com sistema de criação e login de contas, sistema de likes e comentários em cada podcast com banco de dados MongoDB!</p>
-          <div>
+          <Details>
             <Video src="./vid/PodPato (Front e Back).webm" controls />
             <ul>
               <li>Link: <a href="https://podpato.onrender.com" target="_blank">https://podpato.onrender.com</a></li>
@@ -130,13 +162,30 @@ export default function Home() {
               <li>Sistema de comentários, que podem ser criados, editados e excluídos</li>
               <li>Salvos e Histórico dos podcasts em conjunto com a conta logada</li>
             </ul>
-          </div>
+          </Details>
         </Project>
         <Project>
           <h3>Jogo da Velha</h3>
-          <h4>HTML, CSS, JavaScript, React</h4>
+          <Languages>
+            <Language title='Html5'>
+              <FaHtml5 className="icon" />
+              <h4 className="name">Html5</h4>
+            </Language>
+            <Language title="Css3">
+              <FaCss3 className="icon" />
+              <h4 className="name">Css3</h4>
+            </Language>
+            <Language title="JavaScript">
+              <FaJs className="icon" />
+              <h4 className="name">JavaScript</h4>
+            </Language>
+            <Language title="React">
+              <FaReact className="icon" />
+              <h4 className="name">React</h4>
+            </Language>
+          </Languages>
           <p>Jogo da velha criado utilizando a framework React!</p>
-          <div>
+          <Details>
             <Video src="./vid/jogo-da-velha.webm" controls />
             <ul>
               <li>Link: <a href="https://felipe-laskos-tic-tac-toe.vercel.app" target="_blank">https://felipe-laskos-tic-tac-toe.vercel.app</a></li>
@@ -146,7 +195,7 @@ export default function Home() {
               <li>Os jogadores podem mudar seus nicks</li>
               <li>Quando o jogo acaba, pode ser reiniciado</li>
             </ul>
-          </div>
+          </Details>
         </Project>
       </Projects>
       <Footer>

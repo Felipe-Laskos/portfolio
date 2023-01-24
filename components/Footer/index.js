@@ -33,6 +33,12 @@ const Footer = styled.footer`
             font-size: 30px;
         }
     }
+
+    @media screen and (max-width: 400px) {
+        a {
+            font-size: 20px;
+        }
+    }
 `;
 
 export default Footer;

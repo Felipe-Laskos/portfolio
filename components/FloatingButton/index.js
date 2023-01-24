@@ -5,7 +5,7 @@ const FloatingButton = styled.button`
     cursor: pointer;
     background-color: ${props => props.theme.colors.dark_blue};
     border-radius: 10px;
-    padding: 5px 8px;
+    padding: 5px;
     border: none;
     position: fixed;
     ${(props) => {
@@ -28,7 +28,8 @@ const FloatingButton = styled.button`
     }
 
     .icon {
-        width: 20px;
+        width: 25px;
+        font-size: 25px;
     }
 `;
 
