@@ -1,57 +1,18 @@
-import styled, { css } from "styled-components";
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { StyledHeader } from "./styles";
 
-const Header = styled.header`
-    z-index: 3;
-    ${(props) => {
-        if(props.fixed.screenPosition > props.fixed.screenHeight) {
-            return css`
-                top: -60px !important;
-                transform: translateY(100%);
-                position: fixed;
-                background-color: ${props => props.theme.colors.dark_blue};
-            `;
-        }else if(props.fixed.screenPosition > 200) {
-            return css`
-                top: -60px !important;
-                transform: translateY(0);
-                position: fixed;
-                background-color: ${props => props.theme.colors.dark_blue};
-            `;
-        }else {
-            return css`
-                top: 0 !important;
-                transform: translateY(0);
-                position: static;
-                background-color: ${props => props.theme.colors.blue};
-            `;
-        }
-    }}
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 60px;
-    color: ${props => props.theme.colors.white};
-    font-family: 'Niconne', cursive;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.5s, background-color 0.5s;
-
-    h2 {
-        font-size: 40px;
-    }
-
-    a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    @media screen and (max-width: 300px) {
-        h2 {
-            font-size: 30px;
-        }
-    }
-`;
+const Header = ({ fixed }) => {
+    return (
+        <StyledHeader fixed={fixed}>
+            <h2>Felipe Laskos</h2>
+            <a href="https://github.com/Felipe-Laskos" target="_blank">
+            <FaGithub className="icon icon-header"/>
+            </a>
+            <a href="https://www.linkedin.com/in/felipe-matheus-laskos-068667219/" target="_blank">
+            <FaLinkedin className="icon icon-header" />
+            </a>
+        </StyledHeader>
+    );
+}
 
 export default Header;

@@ -3,11 +3,11 @@ import Head from '../components/Head';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import FloatingButton from '../components/FloatingButton';
-import { Call, CallText, CallImage, CallAlign } from '../components/Call';
-import { About, List } from '../components/About';
+import Call from '../components/Call';
+import About from '../components/About';
 import { Projects, Project, Video, Languages, Details, Language } from '../components/Projects';
 
-import { FaGithub, FaLinkedin, FaNodeJs, FaJs, FaReact, FaHtml5, FaCss3, FaArrowUp } from 'react-icons/fa';
+import { FaNodeJs, FaJs, FaReact, FaHtml5, FaCss3, FaArrowUp } from 'react-icons/fa';
 import { SiMongodb } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 
@@ -29,15 +29,9 @@ export default function Home() {
   return (
     <>
       <Head title="Felipe Laskos" />
-      <Header fixed={fixedHeader}>
-        <h2>Felipe Laskos</h2>
-        <a href="https://github.com/Felipe-Laskos" target="_blank">
-          <FaGithub className="icon icon-header"/>
-        </a>
-        <a href="https://www.linkedin.com/in/felipe-matheus-laskos-068667219/" target="_blank">
-          <FaLinkedin className="icon icon-header" />
-        </a>
-      </Header>
+
+      <Header fixed={fixedHeader} />
+
       <FloatingButton title='Ir ao topo' show={fixedHeader} onClick={(event) => {
         window.scroll({
           top: 0,
@@ -47,52 +41,11 @@ export default function Home() {
       }} >
         <FaArrowUp className="icon" />
       </FloatingButton>
-      <Call margin={fixedHeader}>
-        <CallImage />
-        <CallText>
-          <CallAlign>
-            <h2>Felipe Laskos</h2>
-            <h2>Desenvolvedor Web</h2>
-            <h2 className='underlined'>Júnior</h2>
-          </CallAlign>
-        </CallText>
-      </Call>
-      <About>
-        <h2>Sobre Mim</h2>
-        <List>
-          <h3>Habilidades</h3>
-          <ul>
-            <li>Front-End: HTML, CSS, JavaScript, React, Next.js</li>
-            <li>Back-End: Node.js, Express, MongoDB</li>
-            <li>Outros: Python</li>
-          </ul>
-        </List>
-        <List>
-          <h3>Estou a procura...</h3>
-          <ul>
-            <li>De uma possível oportunidade de emprego como desenvolvedor web</li>
-          </ul>
-        </List>
-        <List>
-          <h3>Estudos e idiomas</h3>
-          <ul>
-            <li>Estudando no 3º Ano do Ensino Médio </li>
-            <li>Cursei front-end na Alura (através do programa Edu-Tech)</li>
-            <li>Aprendendo back-end pela Internet</li>
-            <li>Aprimorando minhas habilidades em React e Python</li>
-            <li>Inglês Básico</li>
-          </ul>
-        </List>
-        <List>
-          <h3>Informações</h3>
-          <ul>
-            <li>Tenho 16 anos</li>
-            <li>Não tenho experiência profissional</li>
-            <li>Gosto de aprender coisas novas, todo conhecimento novo é bem-vindo</li>
-            <li>Sempre busco dar o meu melhor em tudo o que faço</li>
-          </ul>
-        </List>
-      </About>
+
+      <Call margin={fixedHeader} />
+
+      <About />
+
       <Projects>
         <h2>Projetos</h2>
         <Project>
@@ -198,10 +151,8 @@ export default function Home() {
           </Details>
         </Project>
       </Projects>
-      <Footer>
-        <h3>Contato via:</h3>
-        <h4>e-mail: <a href="mailto:felipematheuslaskos@gmail.com">felipematheuslaskos@gmail.com</a></h4>
-      </Footer>
+      
+      <Footer />
     </>
   )
 }
