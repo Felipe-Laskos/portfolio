@@ -13,9 +13,9 @@ const About = () => {
             </ul>
             </List>
             <List>
-            <h3>Estou a procura...</h3>
+            <h3>Atividades complementares</h3>
             <ul>
-                <li>De uma possível oportunidade de emprego como desenvolvedor web</li>
+                <li>Em 2021 fiz parte do projeto da Edutech, que deu oportunidade para jovens aprenderem sobre o desenvolvimento de sites.</li>
             </ul>
             </List>
             <List>
@@ -32,7 +32,6 @@ const About = () => {
             <h3>Informações</h3>
             <ul>
                 <li>Tenho 16 anos</li>
-                <li>Não tenho experiência profissional</li>
                 <li>Gosto de aprender coisas novas, todo conhecimento novo é bem-vindo</li>
                 <li>Sempre busco dar o meu melhor em tudo o que faço</li>
             </ul>
