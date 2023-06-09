@@ -25,7 +25,7 @@ const About = () => {
                 <li>Cursei front-end na Alura (através do programa Edu-Tech)</li>
                 <li>Aprendendo back-end pela Internet</li>
                 <li>Aprimorando minhas habilidades em React e Python</li>
-                <li>Inglês Básico</li>
+                <li>Inglês Intermediário</li>
             </ul>
             </List>
             <List>
