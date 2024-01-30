@@ -21,7 +21,6 @@ const About = () => {
             <List>
             <h3>Estudos e idiomas</h3>
             <ul>
-                <li>Estudando no 3º Ano do Ensino Médio </li>
                 <li>Cursei front-end na Alura (através do programa Edu-Tech)</li>
                 <li>Aprendendo back-end pela Internet</li>
                 <li>Aprimorando minhas habilidades em React e Python</li>
