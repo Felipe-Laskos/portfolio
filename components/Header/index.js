@@ -8,7 +8,7 @@ const Header = ({ fixed }) => {
             <a href="https://github.com/Felipe-Laskos" target="_blank">
             <FaGithub className="icon icon-header"/>
             </a>
-            <a href="https://www.linkedin.com/in/felipe-matheus-laskos-068667219/" target="_blank">
+            <a href="https://www.linkedin.com/in/felipe-matheus-laskos/" target="_blank">
             <FaLinkedin className="icon icon-header" />
             </a>
         </StyledHeader>
