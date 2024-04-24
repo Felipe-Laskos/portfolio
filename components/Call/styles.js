@@ -57,6 +57,10 @@ export const CallText = styled.div`
         overflow: hidden;
     }
 
+    h2.nome {
+        margin-bottom: 50px;
+    }
+
     h2.underlined::after {
         content: "";
         height: 5px;

@@ -6,9 +6,9 @@ const Call = ({ margin }) => {
             <CallImage />
             <CallText>
             <CallAlign>
-                <h2>Felipe Laskos</h2>
-                <h2>Desenvolvedor Web</h2>
-                <h2 className='underlined'>Júnior</h2>
+                <h2 className='nome'>Felipe Laskos</h2>
+                <h2>Aprendiz</h2>
+                <h2 className='underlined'>Desenvolvedor</h2>
             </CallAlign>
             </CallText>
         </StyledCall>
