@@ -33,7 +33,7 @@ export const StyledCall = styled.section`
 
 export const CallImage = styled.div`
     width: 40%;
-    background: url("./img/felipe-laskos.jpeg") center / cover no-repeat;
+    background: url("./img/felipe-laskos.jpg") center / cover no-repeat;
 
     @media (max-width: 700px) {
         width: 100%;

@@ -7,8 +7,8 @@ import Call from '../components/Call';
 import About from '../components/About';
 import { Projects, Project, Video, Languages, Details, Language } from '../components/Projects';
 
-import { FaNodeJs, FaJs, FaReact, FaHtml5, FaCss3, FaArrowUp } from 'react-icons/fa';
-import { SiMongodb } from 'react-icons/si';
+import { FaJava, FaNodeJs, FaJs, FaReact, FaHtml5, FaCss3, FaArrowUp } from 'react-icons/fa';
+import { SiMongodb, SiSpring, SiSpringboot, SiPostgresql } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 
 export default function Home() {
@@ -48,6 +48,49 @@ export default function Home() {
 
       <Projects>
         <h2>Projetos</h2>
+        <Project>
+          <h3>Do And Build</h3>
+          <Languages>
+            <Language title='Html5'>
+              <FaHtml5 className="icon" />
+              <h4 className="name">Html5</h4>
+            </Language>
+            <Language title="Css3">
+              <FaCss3 className="icon" />
+              <h4 className="name">Css3</h4>
+            </Language>
+            <Language title="JavaScript">
+              <FaJs className="icon" />
+              <h4 className="name">JavaScript</h4>
+            </Language>
+            <Language title="Spring">
+              <SiSpring className="icon" />
+              <h4 className="name">Spring</h4>
+            </Language>
+            <Language title="Java">
+              <FaJava className="icon" />
+              <h4 className="name">Java</h4>
+            </Language>
+            <Language title="Postgresql">
+              <SiPostgresql className="icon" />
+              <h4 className="name">Postgresql</h4>
+            </Language>
+          </Languages>
+          <p>Site de produtividade e organização, onde os usuários constroem e compartilham pastas!</p>
+          <Details>
+            <Video src="./vid/doandbuild.webm" controls />
+            <ul>
+              <li>Link: <a href="https://doandbuild.onrender.com" target="_blank">https://doandbuild.onrender.com</a></li>
+              <li>Banco de dados Postgresql</li>
+              <li>Sistema completo de registro/login com Spring Security e JWT</li>
+              <li>Criação de pastas de tarefas/estudos como um roadmap</li>
+              <li>Criação de tarefas com links de apoio</li>
+              <li>Clone de pastas públicas para si</li>
+              <li>Sistema de likes nas pastas públicas</li>
+              <li>Uma casa é construída conforme você completa suas tarefas!</li>
+            </ul>
+          </Details>
+        </Project>
         <Project>
           <h3>PodPato (Versão Front-end)</h3>
           <Languages>

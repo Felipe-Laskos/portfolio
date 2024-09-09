@@ -5,11 +5,20 @@ const About = () => {
         <StyledAbout>
             <h2>Sobre Mim</h2>
             <List>
+            <h3>Objetivo Profissional</h3>
+            <ul>
+                <li>Oportunidade de emprego na área de desenvolvimento</li>
+            </ul>
+            </List>
+            <List>
             <h3>Habilidades</h3>
             <ul>
                 <li>Front-End: HTML, CSS, JavaScript, React, Next.js</li>
-                <li>Back-End: Node.js, Express, MongoDB</li>
-                <li>Outros: Python</li>
+                <li>Back-End: Node.js, Spring Boot com Java</li>
+                <li>Banco de Dados: MongoDB, Postgresql</li>
+                <li>Ferramentas: Linux, Windows, Docker, Git, GitHub</li>
+                <li>Noções em: Python, C, C++</li>
+                <li>Outros: Excel, Word</li>
             </ul>
             </List>
             <List>
@@ -21,11 +30,17 @@ const About = () => {
             <List>
             <h3>Estudos e idiomas</h3>
             <ul>
+                <li>Estudante UFPR - Tecnologia em Análise e Desenvolvimento de Sistemas</li>
                 <li>Cursei front-end na Alura (através do programa Edu-Tech)</li>
                 <li>Aprendendo back-end pela Internet</li>
-                <li>Aprimorando minhas habilidades em React e Python</li>
                 <li>Inglês Intermediário</li>
             </ul>
+            </List>
+            <List>
+                <h3>Experiência Profissional</h3>
+                <ul>
+                    <li>Aprendiz Assistente Administrativo - Prodiet Medical Nutrition - 1 ano e 4 meses</li>
+                </ul>
             </List>
             <List>
             <h3>Informações</h3>
