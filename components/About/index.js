@@ -45,7 +45,7 @@ const About = () => {
             <List>
             <h3>Informações</h3>
             <ul>
-                <li>Tenho 17 anos</li>
+                <li>Tenho 18 anos</li>
                 <li>Gosto de aprender coisas novas, todo conhecimento novo é bem-vindo</li>
                 <li>Sempre busco dar o meu melhor em tudo o que faço</li>
             </ul>
