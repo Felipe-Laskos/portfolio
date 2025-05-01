@@ -33,6 +33,7 @@ export const List = styled.div`
     li {
         font-family: 'Quicksand', sans-serif;
         font-size: 18px;
+        margin-bottom: 5px;
     }
     
     @media screen and (max-width: 900px) {
