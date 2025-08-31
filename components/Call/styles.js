@@ -33,11 +33,23 @@ export const StyledCall = styled.section`
 
 export const CallImage = styled.div`
     width: 40%;
-    background: url("./img/felipe-laskos.jpg") center / cover no-repeat;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        border-radius: 50%;
+        width: 65%;
+    }
 
     @media (max-width: 700px) {
         width: 100%;
-        height: 60vh;
+        height: 50vh;
+
+        img {
+            width: 50%;
+        }
     }
 `;
 
@@ -76,7 +88,7 @@ export const CallText = styled.div`
 
     @media (max-width: 700px) {
         width: 100%;
-        height: 30vh;
+        height: 50vh;
 
         h2 {
             font-size: 40px;

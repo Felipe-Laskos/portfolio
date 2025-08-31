@@ -3,7 +3,9 @@ import { StyledCall, CallImage, CallText, CallAlign } from "./styles";
 const Call = ({ margin }) => {
     return (
         <StyledCall margin={margin}>
-            <CallImage />
+            <CallImage>
+                <img alt="Felipe Laskos profile picture" src="./img/felipe-laskos.jpg" />
+            </CallImage>
             <CallText>
             <CallAlign>
                 <h2 className='nome'>Felipe Laskos</h2>
