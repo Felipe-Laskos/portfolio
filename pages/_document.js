@@ -4,7 +4,7 @@ import { ServerStyleSheet } from 'styled-components'
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html lang="pt-br">
+      <Html lang={this.props.locale}>
         <Head>
           <meta name="viewport" content="width=device-width" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />

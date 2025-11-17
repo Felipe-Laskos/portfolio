@@ -8,10 +8,13 @@ import About from '../components/About';
 import { Projects, Project, Video, Languages, Details, Language } from '../components/Projects';
 
 import { FaJava, FaNodeJs, FaJs, FaReact, FaHtml5, FaCss3, FaArrowUp } from 'react-icons/fa';
-import { SiMongodb, SiSpring, SiSpringboot, SiPostgresql } from 'react-icons/si';
-import { TbBrandNextjs } from 'react-icons/tb';
+import { SiMongodb, SiSpring, SiPostgresql } from 'react-icons/si';
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 export default function Home() {
+  const { t } = useTranslation("common");
+
   const [fixedHeader, setFixedHeader] = React.useState({
     screenHeight: 0,
     screenPosition: 0
@@ -32,7 +35,7 @@ export default function Home() {
 
       <Header fixed={fixedHeader} />
 
-      <FloatingButton title='Ir ao topo' show={fixedHeader} onClick={(event) => {
+      <FloatingButton title={t('floatingButton.goToTop')} show={fixedHeader} onClick={(event) => {
         window.scroll({
           top: 0,
           left: 0,
@@ -47,9 +50,9 @@ export default function Home() {
       <About />
 
       <Projects>
-        <h2>Projetos</h2>
+        <h2>{t('projects.title')}</h2>
         <Project>
-          <h3>Do And Build</h3>
+          <h3>{t('projects.doAndBuild.name')}</h3>
           <Languages>
             <Language title='Html5'>
               <FaHtml5 className="icon" />
@@ -76,23 +79,23 @@ export default function Home() {
               <h4 className="name">Postgresql</h4>
             </Language>
           </Languages>
-          <p>Site de produtividade e organização, onde os usuários constroem e compartilham pastas!</p>
+          <p>{t('projects.doAndBuild.description')}</p>
           <Details>
             <Video src="./vid/doandbuild.webm" controls />
             <ul>
               <li>Link: <a href="https://doandbuild.onrender.com" target="_blank">https://doandbuild.onrender.com</a></li>
-              <li>Banco de dados Postgresql</li>
-              <li>Sistema completo de registro/login com Spring Security e JWT</li>
-              <li>Criação de pastas de tarefas/estudos como um roadmap</li>
-              <li>Criação de tarefas com links de apoio</li>
-              <li>Clone de pastas públicas para si</li>
-              <li>Sistema de likes nas pastas públicas</li>
-              <li>Uma casa é construída conforme você completa suas tarefas!</li>
+              <li>{t('projects.doAndBuild.features.database')}</li>
+              <li>{t('projects.doAndBuild.features.auth')}</li>
+              <li>{t('projects.doAndBuild.features.folders')}</li>
+              <li>{t('projects.doAndBuild.features.tasks')}</li>
+              <li>{t('projects.doAndBuild.features.clone')}</li>
+              <li>{t('projects.doAndBuild.features.likes')}</li>
+              <li>{t('projects.doAndBuild.features.house')}</li>
             </ul>
           </Details>
         </Project>
         <Project>
-          <h3>PodPato (Versão Front-end)</h3>
+          <h3>{t('projects.podpatoFrontend.name')}</h3>
           <Languages>
             <Language title='Html5'>
               <FaHtml5 className="icon" />
@@ -107,22 +110,22 @@ export default function Home() {
               <h4 className="name">JavaScript</h4>
             </Language>
           </Languages>
-          <p>Site para ver os melhores podcasts do Youtube!</p>
+          <p>{t('projects.podpatoFrontend.description')}</p>
           <Details>
             <Video src="./vid/PodPato (Versão Front-end).webm" controls />
             <ul>
               <li>Link: <a href="https://felipe-laskos.github.io/podpato/" target="_blank">https://felipe-laskos.github.io/podpato/</a></li>
-              <li>Front-End: HTML, CSS, JavaScript</li>
-              <li>API do Youtube</li>
-              <li>Modais do Bootstrap</li>
-              <li>Bastante JavaScript para controle da API, resultando em um site com muitas funcionalidades dentro dos podcasts</li>
-              <li>Sistema de vídeos salvos</li>
-              <li>Sistema de histórico de vídeos</li>
+              <li>{t('projects.podpatoFrontend.features.stack')}</li>
+              <li>{t('projects.podpatoFrontend.features.api')}</li>
+              <li>{t('projects.podpatoFrontend.features.modals')}</li>
+              <li>{t('projects.podpatoFrontend.features.javascript')}</li>
+              <li>{t('projects.podpatoFrontend.features.saved')}</li>
+              <li>{t('projects.podpatoFrontend.features.history')}</li>
             </ul>
           </Details>
         </Project>
         <Project>
-          <h3>PodPato (Front e Back)</h3>
+          <h3>{t('projects.podpatoFullstack.name')}</h3>
           <Languages>
             <Language title='Html5'>
               <FaHtml5 className="icon" />
@@ -145,23 +148,23 @@ export default function Home() {
               <h4 className="name">MongoDB</h4>
             </Language>
           </Languages>
-          <p>Tudo que a versão somente front-end entrega, porém com sistema de criação e login de contas, sistema de likes e comentários em cada podcast com banco de dados MongoDB!</p>
+          <p>{t('projects.podpatoFullstack.description')}</p>
           <Details>
             <Video src="./vid/PodPato (Front e Back).webm" controls />
             <ul>
               <li>Link: <a href="https://podpato.onrender.com" target="_blank">https://podpato.onrender.com</a></li>
-              <li>Utiliza diversos módulos do Node.js</li>
-              <li>Sistema de contas com e-mail e senha, registro e login</li>
-              <li>Aplicação com Banco de dados MongoDB, sendo controlado através do Mongoose</li>
-              <li>Autenticação com o módulo Passport</li>
-              <li>Sistema de Likes e Dislikes</li>
-              <li>Sistema de comentários, que podem ser criados, editados e excluídos</li>
-              <li>Salvos e Histórico dos podcasts em conjunto com a conta logada</li>
+              <li>{t('projects.podpatoFullstack.features.nodejs')}</li>
+              <li>{t('projects.podpatoFullstack.features.accounts')}</li>
+              <li>{t('projects.podpatoFullstack.features.mongodb')}</li>
+              <li>{t('projects.podpatoFullstack.features.passport')}</li>
+              <li>{t('projects.podpatoFullstack.features.likes')}</li>
+              <li>{t('projects.podpatoFullstack.features.comments')}</li>
+              <li>{t('projects.podpatoFullstack.features.savedHistory')}</li>
             </ul>
           </Details>
         </Project>
         <Project>
-          <h3>Jogo da Velha</h3>
+          <h3>{t('projects.ticTacToe.name')}</h3>
           <Languages>
             <Language title='Html5'>
               <FaHtml5 className="icon" />
@@ -180,16 +183,16 @@ export default function Home() {
               <h4 className="name">React</h4>
             </Language>
           </Languages>
-          <p>Jogo da velha criado utilizando a framework React!</p>
+          <p>{t('projects.ticTacToe.description')}</p>
           <Details>
             <Video src="./vid/jogo-da-velha.webm" controls />
             <ul>
               <li>Link: <a href="https://felipe-laskos-tic-tac-toe.vercel.app" target="_blank">https://felipe-laskos-tic-tac-toe.vercel.app</a></li>
-              <li>Trabalha com o sistema de componentes do React</li>
-              <li>Utiliza os Hooks disponibilizados pela framework (States e Effects)</li>
-              <li>Os jogadores escolhem X ou O antes de jogar</li>
-              <li>Os jogadores podem mudar seus nicks</li>
-              <li>Quando o jogo acaba, pode ser reiniciado</li>
+              <li>{t('projects.ticTacToe.features.components')}</li>
+              <li>{t('projects.ticTacToe.features.hooks')}</li>
+              <li>{t('projects.ticTacToe.features.choice')}</li>
+              <li>{t('projects.ticTacToe.features.nicks')}</li>
+              <li>{t('projects.ticTacToe.features.restart')}</li>
             </ul>
           </Details>
         </Project>
@@ -198,4 +201,12 @@ export default function Home() {
       <Footer />
     </>
   )
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  }
 }

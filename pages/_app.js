@@ -1,4 +1,6 @@
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import { appWithTranslation } from 'next-i18next';
+import nextI18NextConfig from '../next-i18next.config.js';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -44,7 +46,7 @@ const theme = {
   }
 }
 
-export default function App({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return (
     <>
       <GlobalStyle />
@@ -54,3 +56,5 @@ export default function App({ Component, pageProps }) {
     </>
   )
 }
+
+export default appWithTranslation(App, nextI18NextConfig);

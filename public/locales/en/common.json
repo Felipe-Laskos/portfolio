@@ -1,0 +1,104 @@
+{
+  "header": {
+    "name": "Felipe Laskos"
+  },
+  "call": {
+    "student": "Student",
+    "developer": "Developer"
+  },
+  "floatingButton": {
+    "goToTop": "Go to top"
+  },
+  "about": {
+    "title": "About Me",
+    "professionalGoal": {
+      "title": "Professional Goal",
+      "content": "Continuously evolve as a full stack developer, deepening knowledge in software architecture and development best practices, while collaborating with teams to deliver real value to users."
+    },
+    "skills": {
+      "title": "Skills",
+      "frontend": "Front-End: HTML, CSS, JavaScript, Typescript, React, Next.js",
+      "backend": "Back-End: Node.js, Spring Boot with Java",
+      "database": "Databases: MongoDB, Postgresql, MySql",
+      "tools": "Tools: Linux, Windows, Docker, Git, GitHub",
+      "notions": "Basic knowledge in: Python, C, C++",
+      "other": "Other: Excel, Word"
+    },
+    "activities": {
+      "title": "Additional Activities",
+      "content": "In 2021 I was part of the Edutech project, which gave young people the opportunity to learn about website development."
+    },
+    "education": {
+      "title": "Education and Languages",
+      "university": "UFPR Student - Technology in Systems Analysis and Development",
+      "alura": "Took front-end courses at Alura (through the Edu-Tech program)",
+      "english": "Intermediate English"
+    },
+    "experience": {
+      "title": "Professional Experience",
+      "prodiet": "Administrative Assistant Apprentice | Prodiet Medical Nutrition | Mar 2023 - Jun 2024",
+      "nex": "Full Stack Developer Intern | Nex Energy | Mar 2025 - Present"
+    },
+    "info": {
+      "title": "Information",
+      "learning": "I enjoy learning new things, all new knowledge is welcome",
+      "best": "I always strive to do my best in everything I do"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "doAndBuild": {
+      "name": "Do And Build",
+      "description": "Productivity and organization website where users build and share folders!",
+      "features": {
+        "database": "Postgresql database",
+        "auth": "Complete registration/login system with Spring Security and JWT",
+        "folders": "Creation of task/study folders as a roadmap",
+        "tasks": "Task creation with support links",
+        "clone": "Clone public folders for yourself",
+        "likes": "Like system for public folders",
+        "house": "A house is built as you complete your tasks!"
+      }
+    },
+    "podpatoFrontend": {
+      "name": "PodPato (Front-end Version)",
+      "description": "Website to watch the best Youtube podcasts!",
+      "features": {
+        "stack": "Front-End: HTML, CSS, JavaScript",
+        "api": "Youtube API",
+        "modals": "Bootstrap Modals",
+        "javascript": "Extensive JavaScript for API control, resulting in a website with many podcast features",
+        "saved": "Saved videos system",
+        "history": "Video history system"
+      }
+    },
+    "podpatoFullstack": {
+      "name": "PodPato (Front and Back)",
+      "description": "Everything the front-end only version delivers, but with account creation and login system, likes and comments system for each podcast with MongoDB database!",
+      "features": {
+        "nodejs": "Uses various Node.js modules",
+        "accounts": "Account system with email and password, registration and login",
+        "mongodb": "Application with MongoDB database, controlled through Mongoose",
+        "passport": "Authentication with Passport module",
+        "likes": "Likes and Dislikes system",
+        "comments": "Comments system that can be created, edited and deleted",
+        "savedHistory": "Saved and History of podcasts together with the logged account"
+      }
+    },
+    "ticTacToe": {
+      "name": "Tic Tac Toe",
+      "description": "Tic Tac Toe game created using the React framework!",
+      "features": {
+        "components": "Works with React's component system",
+        "hooks": "Uses Hooks provided by the framework (States and Effects)",
+        "choice": "Players choose X or O before playing",
+        "nicks": "Players can change their nicknames",
+        "restart": "When the game ends, it can be restarted"
+      }
+    }
+  },
+  "footer": {
+    "contact": "Contact via:",
+    "email": "e-mail:"
+  }
+}

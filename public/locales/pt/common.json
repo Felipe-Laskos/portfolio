@@ -1,0 +1,104 @@
+{
+  "header": {
+    "name": "Felipe Laskos"
+  },
+  "call": {
+    "student": "Estudante",
+    "developer": "Desenvolvedor"
+  },
+  "floatingButton": {
+    "goToTop": "Ir ao topo"
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "professionalGoal": {
+      "title": "Objetivo Profissional",
+      "content": "Evoluir continuamente como desenvolvedor full stack, aprofundando conhecimentos em arquitetura de software e boas práticas de desenvolvimento, enquanto colaboro em equipes para entregar valor real aos usuários."
+    },
+    "skills": {
+      "title": "Habilidades",
+      "frontend": "Front-End: HTML, CSS, JavaScript, Typescript, React, Next.js",
+      "backend": "Back-End: Node.js, Spring Boot com Java",
+      "database": "Banco de Dados: MongoDB, Postgresql, MySql",
+      "tools": "Ferramentas: Linux, Windows, Docker, Git, GitHub",
+      "notions": "Noções em: Python, C, C++",
+      "other": "Outros: Excel, Word"
+    },
+    "activities": {
+      "title": "Atividades complementares",
+      "content": "Em 2021 fiz parte do projeto da Edutech, que deu oportunidade para jovens aprenderem sobre o desenvolvimento de sites."
+    },
+    "education": {
+      "title": "Estudos e idiomas",
+      "university": "Estudante UFPR - Tecnologia em Análise e Desenvolvimento de Sistemas",
+      "alura": "Cursei front-end na Alura (através do programa Edu-Tech)",
+      "english": "Inglês Intermediário"
+    },
+    "experience": {
+      "title": "Experiência Profissional",
+      "prodiet": "Aprendiz Assistente Administrativo | Prodiet Medical Nutrition | mar de 2023 - jun de 2024",
+      "nex": "Estagiário Desenvolvedor Full Stack | Nex Energy | mar de 2025 - o momento"
+    },
+    "info": {
+      "title": "Informações",
+      "learning": "Gosto de aprender coisas novas, todo conhecimento novo é bem-vindo",
+      "best": "Sempre busco dar o meu melhor em tudo o que faço"
+    }
+  },
+  "projects": {
+    "title": "Projetos",
+    "doAndBuild": {
+      "name": "Do And Build",
+      "description": "Site de produtividade e organização, onde os usuários constroem e compartilham pastas!",
+      "features": {
+        "database": "Banco de dados Postgresql",
+        "auth": "Sistema completo de registro/login com Spring Security e JWT",
+        "folders": "Criação de pastas de tarefas/estudos como um roadmap",
+        "tasks": "Criação de tarefas com links de apoio",
+        "clone": "Clone de pastas públicas para si",
+        "likes": "Sistema de likes nas pastas públicas",
+        "house": "Uma casa é construída conforme você completa suas tarefas!"
+      }
+    },
+    "podpatoFrontend": {
+      "name": "PodPato (Versão Front-end)",
+      "description": "Site para ver os melhores podcasts do Youtube!",
+      "features": {
+        "stack": "Front-End: HTML, CSS, JavaScript",
+        "api": "API do Youtube",
+        "modals": "Modais do Bootstrap",
+        "javascript": "Bastante JavaScript para controle da API, resultando em um site com muitas funcionalidades dentro dos podcasts",
+        "saved": "Sistema de vídeos salvos",
+        "history": "Sistema de histórico de vídeos"
+      }
+    },
+    "podpatoFullstack": {
+      "name": "PodPato (Front e Back)",
+      "description": "Tudo que a versão somente front-end entrega, porém com sistema de criação e login de contas, sistema de likes e comentários em cada podcast com banco de dados MongoDB!",
+      "features": {
+        "nodejs": "Utiliza diversos módulos do Node.js",
+        "accounts": "Sistema de contas com e-mail e senha, registro e login",
+        "mongodb": "Aplicação com Banco de dados MongoDB, sendo controlado através do Mongoose",
+        "passport": "Autenticação com o módulo Passport",
+        "likes": "Sistema de Likes e Dislikes",
+        "comments": "Sistema de comentários, que podem ser criados, editados e excluídos",
+        "savedHistory": "Salvos e Histórico dos podcasts em conjunto com a conta logada"
+      }
+    },
+    "ticTacToe": {
+      "name": "Jogo da Velha",
+      "description": "Jogo da velha criado utilizando a framework React!",
+      "features": {
+        "components": "Trabalha com o sistema de componentes do React",
+        "hooks": "Utiliza os Hooks disponibilizados pela framework (States e Effects)",
+        "choice": "Os jogadores escolhem X ou O antes de jogar",
+        "nicks": "Os jogadores podem mudar seus nicks",
+        "restart": "Quando o jogo acaba, pode ser reiniciado"
+      }
+    }
+  },
+  "footer": {
+    "contact": "Contato via:",
+    "email": "e-mail:"
+  }
+}

@@ -1,6 +1,9 @@
 import { StyledCall, CallImage, CallText, CallAlign } from "./styles";
+import { useTranslation } from 'next-i18next';
 
 const Call = ({ margin }) => {
+    const { t } = useTranslation('common');
+
     return (
         <StyledCall margin={margin}>
             <CallImage>
@@ -8,9 +11,9 @@ const Call = ({ margin }) => {
             </CallImage>
             <CallText>
             <CallAlign>
-                <h2 className='nome'>Felipe Laskos</h2>
-                <h2>Estudante</h2>
-                <h2 className='underlined'>Desenvolvedor</h2>
+                <h2 className='nome'>{t('header.name')}</h2>
+                <h2>{t('call.student')}</h2>
+                <h2 className='underlined'>{t('call.developer')}</h2>
             </CallAlign>
             </CallText>
         </StyledCall>
