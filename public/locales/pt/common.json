@@ -4,7 +4,7 @@
   },
   "call": {
     "student": "Estudante",
-    "developer": "Desenvolvedor"
+    "role": "Desenvolvedor Full Stack"
   },
   "floatingButton": {
     "goToTop": "Ir ao topo"

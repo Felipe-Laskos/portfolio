@@ -12,8 +12,8 @@ const Call = ({ margin }) => {
             <CallText>
             <CallAlign>
                 <h2 className='nome'>{t('header.name')}</h2>
-                <h2>{t('call.student')}</h2>
-                <h2 className='underlined'>{t('call.developer')}</h2>
+                {/* <h2>{t('call.student')}</h2> */}
+                <h2 className='underlined'>{t('call.role')}</h2>
             </CallAlign>
             </CallText>
         </StyledCall>
