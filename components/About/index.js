@@ -43,6 +43,7 @@ const About = () => {
                 <ul>
                     <li>{t('about.experience.prodiet')}</li>
                     <li>{t('about.experience.nex')}</li>
+                    <li>{t('about.experience.nexContractor')}</li>
                 </ul>
             </List>
             <List>
