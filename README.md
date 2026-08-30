@@ -9,7 +9,7 @@ Portfólio pessoal, bilíngue (PT/EN), hospedado em https://felipe-laskos.vercel
 - **Motion** - animações de entrada e scroll-reveal
 - **next-i18next** - internacionalização PT/EN (`public/locales/`)
 - **react-icons** - ícones de marca (Simple Icons) e UI (Lucide)
-- Fontes via `next/font`: Space Grotesk (títulos), Inter (texto), JetBrains Mono (detalhes)
+- Fontes via `next/font`: Sora (títulos), Manrope (texto), IBM Plex Mono (detalhes)
 
 ## Rodando
 
