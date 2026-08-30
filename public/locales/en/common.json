@@ -1,105 +1,147 @@
 {
-  "header": {
-    "name": "Felipe Laskos"
+  "meta": {
+    "title": "Felipe Laskos - Full Stack Developer",
+    "description": "Full stack developer based in Curitiba, Brazil. I build products, study technology and share what I learn along the way."
   },
-  "call": {
-    "student": "Student",
-    "role": "Full Stack Engineer"
+
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "writing": "Writing",
+    "contact": "Contact"
   },
-  "floatingButton": {
-    "goToTop": "Go to top"
+
+  "hero": {
+    "badge": "Curitiba, Brazil",
+    "role": "Full Stack Developer",
+    "tagline": "I like to understand the problem before writing the code.",
+    "pitch": "I'm a full stack developer, passionate about technology and constant learning. I enjoy turning what I know into hands-on projects, exploring new technologies and understanding how the different parts of a system connect.",
+    "ctaProjects": "See what I've built",
+    "ctaContact": "Let's talk",
+    "photoAlt": "Photo of Felipe Laskos"
   },
+
   "about": {
-    "title": "About Me",
-    "professionalGoal": {
-      "title": "Professional Goal",
-      "content": "Continuously evolve as a full stack developer, deepening knowledge in software architecture and development best practices, while collaborating with teams to deliver real value to users."
-    },
-    "skills": {
-      "title": "Skills",
-      "frontend": "Front-End: HTML, CSS, JavaScript, Typescript, React, Next.js",
-      "backend": "Back-End: Node.js, Spring Boot with Java",
-      "database": "Databases: MongoDB, Postgresql, MySql",
-      "tools": "Tools: Linux, Windows, Docker, Git, GitHub",
-      "notions": "Basic knowledge in: Python, C, C++",
-      "other": "Other: Excel, Word"
-    },
-    "activities": {
-      "title": "Additional Activities",
-      "content": "In 2021 I was part of the Edutech project, which gave young people the opportunity to learn about website development."
-    },
-    "education": {
-      "title": "Education and Languages",
-      "university": "UFPR Student - Technology in Systems Analysis and Development",
-      "alura": "Took front-end courses at Alura (through the Edu-Tech program)",
-      "english": "Advanced English"
-    },
-    "experience": {
-      "title": "Professional Experience",
-      "prodiet": "Administrative Assistant Apprentice | Prodiet Medical Nutrition | Mar 2023 - Jun 2024",
-      "nex": "Full Stack Developer Intern | Nex Energy | Mar 2025 - Feb 2026",
-      "nexContractor": "Full Stack Developer Contractor | Nex Energy | Feb 2026 - Present"
-    },
-    "info": {
-      "title": "Information",
-      "learning": "I enjoy learning new things, all new knowledge is welcome",
-      "best": "I always strive to do my best in everything I do"
+    "kicker": "About me",
+    "title": "My journey in tech",
+    "p1": "I got into software development in 2021, through Edutech. I started with front-end, went through Alura's program and, as I understood the field better, I realized I also wanted to know what was happening behind the scenes. That's where my interest in back-end, databases and architecture came from.",
+    "p2": "Today I work as a full stack developer at Nex Energy, where I started as an intern and was brought on to stay. Day to day, I deal with real product problems: data, APIs, integrations, jobs, interfaces and technical decisions. I especially like to understand the context before touching the code, because a good solution starts long before the editor.",
+    "facts": {
+      "location": "Curitiba, Brazil",
+      "education": "ADS - UFPR (in progress)",
+      "english": "Advanced English",
+      "focus": "Full stack · Software architecture · Continuous learning"
     }
   },
+
+  "experience": {
+    "kicker": "Where I come from",
+    "title": "A journey built through practice",
+    "items": [
+      {
+        "role": "Contract Full Stack Developer",
+        "company": "Nex Energy",
+        "period": "Feb 2026 - present",
+        "description": "After almost a year as an intern, I was brought on to keep working on Nex's products. Today I take part in bigger problems and technical decisions, building everything from data models and APIs to interfaces and integrations.",
+        "stack": ["Elixir", "Phoenix", "React", "PostgreSQL"]
+      },
+      {
+        "role": "Full Stack Developer Intern",
+        "company": "Nex Energy",
+        "period": "Mar 2025 - Feb 2026",
+        "description": "This is where being a developer stopped being just a dream and became a real job. I shipped features to production, took part in code reviews and learned to work as a team on code that can't trade quality for \"just working\".",
+        "stack": ["Elixir", "Phoenix", "React", "PostgreSQL"]
+      },
+      {
+        "role": "Apprentice - Administrative Assistant",
+        "company": "Prodiet Medical Nutrition",
+        "period": "Mar 2023 - Jun 2024",
+        "description": "Before becoming a dev, I learned the essentials of working in any company. Organization, responsibility, communication and routine turned out to be just as important as technical skills.",
+        "stack": []
+      }
+    ]
+  },
+
+  "skills": {
+    "kicker": "My toolkit",
+    "title": "The technology in my day-to-day",
+    "groups": {
+      "frontend": "What users touch",
+      "backend": "Where the logic happens",
+      "data": "Where the data lives",
+      "tools": "What keeps everything running"
+    }
+  },
+
   "projects": {
-    "title": "Projects",
-    "doAndBuild": {
-      "name": "Do And Build",
-      "description": "Productivity and organization website where users build and share folders!",
-      "features": {
-        "database": "Postgresql database",
-        "auth": "Complete registration/login system with Spring Security and JWT",
-        "folders": "Creation of task/study folders as a roadmap",
-        "tasks": "Task creation with support links",
-        "clone": "Clone public folders for yourself",
-        "likes": "Like system for public folders",
-        "house": "A house is built as you complete your tasks!"
-      }
-    },
-    "podpatoFrontend": {
-      "name": "PodPato (Front-end Version)",
-      "description": "Website to watch the best Youtube podcasts!",
-      "features": {
-        "stack": "Front-End: HTML, CSS, JavaScript",
-        "api": "Youtube API",
-        "modals": "Bootstrap Modals",
-        "javascript": "Extensive JavaScript for API control, resulting in a website with many podcast features",
-        "saved": "Saved videos system",
-        "history": "Video history system"
-      }
-    },
-    "podpatoFullstack": {
-      "name": "PodPato (Front and Back)",
-      "description": "Everything the front-end only version delivers, but with account creation and login system, likes and comments system for each podcast with MongoDB database!",
-      "features": {
-        "nodejs": "Uses various Node.js modules",
-        "accounts": "Account system with email and password, registration and login",
-        "mongodb": "Application with MongoDB database, controlled through Mongoose",
-        "passport": "Authentication with Passport module",
-        "likes": "Likes and Dislikes system",
-        "comments": "Comments system that can be created, edited and deleted",
-        "savedHistory": "Saved and History of podcasts together with the logged account"
-      }
-    },
-    "ticTacToe": {
-      "name": "Tic Tac Toe",
-      "description": "Tic Tac Toe game created using the React framework!",
-      "features": {
-        "components": "Works with React's component system",
-        "hooks": "Uses Hooks provided by the framework (States and Effects)",
-        "choice": "Players choose X or O before playing",
-        "nicks": "Players can change their nicknames",
-        "restart": "When the game ends, it can be restarted"
+    "kicker": "My projects",
+    "title": "Things I've built along my tech journey",
+    "intro": "My personal projects are my laboratory. Not all of them were born to become products. Some were born simply because I wanted to find out how something worked.",
+    "visit": "Open project",
+    "items": {
+      "doAndBuild": {
+        "name": "Do And Build",
+        "description": "A mix of productivity, learning and gamification. Users build study roadmaps, organize tasks into folders and construct a house as they make progress.",
+        "highlights": [
+          "Full authentication with Spring Security and JWT",
+          "Public folders, likes and roadmap cloning",
+          "Progress turned into a house that grows with the user"
+        ]
+      },
+      "podpatoFullstack": {
+        "name": "PodPato - Full Stack",
+        "description": "The project that started as a simple podcast aggregator and ended up becoming a complete web development exercise, with users, persistence, interaction and an evolving architecture.",
+        "highlights": [
+          "Authentication and user accounts with Passport",
+          "Comments with a full create, edit and delete cycle",
+          "Saved videos and history persisted with MongoDB"
+        ]
+      },
+      "podpatoFrontend": {
+        "name": "PodPato - Front-end",
+        "description": "The first version of PodPato and one of the projects that shaped my JavaScript learning phase. No framework, no unnecessary abstractions: HTML, CSS, JavaScript and the YouTube API.",
+        "highlights": [
+          "Direct integration with the YouTube API",
+          "Saved videos and watch history persisted in the browser",
+          "An app built entirely with vanilla JavaScript"
+        ]
+      },
+      "ticTacToe": {
+        "name": "Tic Tac Toe",
+        "description": "A small but intentional project. I used a simple game to practice React for real: components, state, effects and how different parts of the interface interact.",
+        "highlights": [
+          "Components and hooks",
+          "Players pick their symbol and nickname",
+          "Full match and rematch flow"
+        ]
       }
     }
   },
+
+  "writing": {
+    "kicker": "Where I keep growing",
+    "title": "I write to consolidate and share knowledge",
+    "lead": "I really enjoy writing about technology. My texts usually come after going through a challenge, finishing a project or learning something new. I believe writing is not only a way to share, but also an excellent way to consolidate knowledge.",
+    "medium": "Texts about development, tools, architecture and things I've learned building software day to day.",
+    "substack": "A more personal space to talk about career, learning and the experience of building a path in technology.",
+    "action": "Read on"
+  },
+
+  "contact": {
+    "kicker": "Contact",
+    "title": "Got something to build?",
+    "lead": "If you want to talk about development, a project, technology or just exchange ideas, reach out. I enjoy good conversations as much as good problems to solve.",
+    "cta": "Send me an email",
+    "or": "or find me on"
+  },
+
   "footer": {
-    "contact": "Contact via:",
-    "email": "e-mail:"
+    "rights": "All rights reserved.",
+    "built": "Built with Next.js, Tailwind CSS and Motion"
+  },
+
+  "a11y": {
+    "backToTop": "Back to top"
   }
 }
