@@ -1,46 +1,15 @@
-import Document, { Head, Html, Main, NextScript } from 'next/document'
-import { ServerStyleSheet } from 'styled-components'
+import { Head, Html, Main, NextScript } from "next/document";
 
-export default class MyDocument extends Document {
-  render() {
-    return (
-      <Html lang={this.props.locale}>
-        <Head>
-          <meta name="viewport" content="width=device-width" />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-          <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Gowun+Dodum&family=Inria+Sans:wght@300;400&family=Moulpali&family=Niconne&family=Quicksand&family=Shanti&family=Sura&display=swap" rel="stylesheet" />
-        </Head>
-        <body>
-          <Main />
-          <NextScript />
-        </body>
-      </Html>
-    )
-  }
-  static async getInitialProps(ctx) {
-    const sheet = new ServerStyleSheet()
-    const originalRenderPage = ctx.renderPage
-
-    try {
-      ctx.renderPage = () =>
-        originalRenderPage({
-          enhanceApp: (App) => (props) =>
-            sheet.collectStyles(<App {...props} />),
-        })
-
-      const initialProps = await Document.getInitialProps(ctx)
-      return {
-        ...initialProps,
-        styles: (
-          <>
-            {initialProps.styles}
-            {sheet.getStyleElement()}
-          </>
-        ),
-      }
-    } finally {
-      sheet.seal()
-    }
-  }
+export default function Document(props) {
+  return (
+    <Html lang={props.locale ?? "en"}>
+      <Head>
+        <meta name="theme-color" content="#070b18" />
+      </Head>
+      <body className="antialiased">
+        <Main />
+        <NextScript />
+      </body>
+    </Html>
+  );
 }

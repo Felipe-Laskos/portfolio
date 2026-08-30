@@ -1,60 +1,26 @@
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import { appWithTranslation } from 'next-i18next';
-import nextI18NextConfig from '../next-i18next.config.js';
+import "../styles/globals.css";
+import { appWithTranslation } from "next-i18next";
+import { IBM_Plex_Mono, Manrope, Sora } from "next/font/google";
+import { MotionConfig } from "motion/react";
+import nextI18NextConfig from "../next-i18next.config.js";
 
-const GlobalStyle = createGlobalStyle`
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  #__next {
-    background-color: #524EB7;
-  }
-
-  .icon-header {
-    font-size: 30px;
-    margin-left: 30px;
-    cursor: pointer;
-    color: #F6F6F8;
-    transition: color 0.25s;
-  }
-
-  .icon-header:hover {
-    color: #E97B64;
-  }
-
-  a {
-    text-decoration: none;
-    cursor: auto;
-  }
-
-  body {
-    scroll-behavior: smooth;
-  }
-`
-
-const theme = {
-  colors: {
-    blue: "#524EB7",
-    light_blue: "#96CAEF",
-    dark_blue: "#3b36bf",
-    orange: "#E97B64",
-    black: "#070707",
-    white: "#F6F6F8"
-  }
-}
+const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope", display: "swap" });
+const sora = Sora({ subsets: ["latin"], variable: "--font-sora", display: "swap" });
+const plexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-plexmono",
+  display: "swap",
+});
 
 function App({ Component, pageProps }) {
   return (
-    <>
-      <GlobalStyle />
-      <ThemeProvider theme={theme}>
+    <div className={`${manrope.variable} ${sora.variable} ${plexMono.variable} font-sans`}>
+      <MotionConfig reducedMotion="user">
         <Component {...pageProps} />
-      </ThemeProvider>
-    </>
-  )
+      </MotionConfig>
+    </div>
+  );
 }
 
 export default appWithTranslation(App, nextI18NextConfig);
