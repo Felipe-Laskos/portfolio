@@ -1,105 +1,147 @@
 {
-  "header": {
-    "name": "Felipe Laskos"
+  "meta": {
+    "title": "Felipe Laskos - Desenvolvedor Full Stack",
+    "description": "Desenvolvedor full stack em Curitiba. Construo produtos, estudo tecnologia e compartilho o que aprendo pelo caminho."
   },
-  "call": {
-    "student": "Estudante",
-    "role": "Desenvolvedor Full Stack"
+
+  "nav": {
+    "about": "Sobre",
+    "experience": "Experiência",
+    "projects": "Projetos",
+    "writing": "Artigos",
+    "contact": "Contato"
   },
-  "floatingButton": {
-    "goToTop": "Ir ao topo"
+
+  "hero": {
+    "badge": "Curitiba, Brasil",
+    "role": "Desenvolvedor Full Stack",
+    "tagline": "Gosto de entender o problema antes de escrever o código.",
+    "pitch": "Sou desenvolvedor full stack, apaixonado por tecnologia e pelo aprendizado constante. Gosto de transformar meus conhecimentos em projetos práticos, explorar novas tecnologias e entender como diferentes partes de um sistema se conectam.",
+    "ctaProjects": "Ver o que construí",
+    "ctaContact": "Vamos conversar",
+    "photoAlt": "Foto de Felipe Laskos"
   },
+
   "about": {
-    "title": "Sobre Mim",
-    "professionalGoal": {
-      "title": "Objetivo Profissional",
-      "content": "Evoluir continuamente como desenvolvedor full stack, aprofundando conhecimentos em arquitetura de software e boas práticas de desenvolvimento, enquanto colaboro em equipes para entregar valor real aos usuários."
-    },
-    "skills": {
-      "title": "Habilidades",
-      "frontend": "Front-End: HTML, CSS, JavaScript, Typescript, React, Next.js",
-      "backend": "Back-End: Node.js, Spring Boot com Java",
-      "database": "Banco de Dados: MongoDB, Postgresql, MySql",
-      "tools": "Ferramentas: Linux, Windows, Docker, Git, GitHub",
-      "notions": "Noções em: Python, C, C++",
-      "other": "Outros: Excel, Word"
-    },
-    "activities": {
-      "title": "Atividades complementares",
-      "content": "Em 2021 fiz parte do projeto da Edutech, que deu oportunidade para jovens aprenderem sobre o desenvolvimento de sites."
-    },
-    "education": {
-      "title": "Estudos e idiomas",
-      "university": "Estudante UFPR - Tecnologia em Análise e Desenvolvimento de Sistemas",
-      "alura": "Cursei front-end na Alura (através do programa Edu-Tech)",
-      "english": "Inglês Avançado"
-    },
-    "experience": {
-      "title": "Experiência Profissional",
-      "prodiet": "Aprendiz Assistente Administrativo | Prodiet Medical Nutrition | mar de 2023 - jun de 2024",
-      "nex": "Estagiário Desenvolvedor Full Stack | Nex Energy | mar de 2025 - fev de 2026",
-      "nexContractor": "Desenvolvedor Full Stack | Nex Energy | fev de 2026 - o momento"
-    },
-    "info": {
-      "title": "Informações",
-      "learning": "Gosto de aprender coisas novas, todo conhecimento novo é bem-vindo",
-      "best": "Sempre busco dar o meu melhor em tudo o que faço"
+    "kicker": "Sobre mim",
+    "title": "Minha jornada na tecnologia",
+    "p1": "Entrei no mundo do desenvolvimento em 2021, através do Edutech. Comecei pelo front-end, passei pela formação da Alura e, conforme fui entendendo melhor a área, percebi que queria saber o que acontecia por trás também. Foi daí que veio o interesse por back-end, bancos de dados e arquitetura.",
+    "p2": "Hoje trabalho como desenvolvedor full stack na Nex Energy, onde comecei como estagiário e fui efetivado. No dia a dia, lido com problemas reais de produto: dados, APIs, integrações, jobs, interfaces e decisões técnicas. Gosto especialmente de entender o contexto antes de mexer no código, porque uma boa solução começa muito antes do editor.",
+    "facts": {
+      "location": "Curitiba, PR - Brasil",
+      "education": "TADS - UFPR (em andamento)",
+      "english": "Inglês avançado",
+      "focus": "Full stack · Arquitetura de software · Aprendizado contínuo"
     }
   },
+
+  "experience": {
+    "kicker": "De onde vim",
+    "title": "Uma trajetória construída na prática",
+    "items": [
+      {
+        "role": "Desenvolvedor PJ Full Stack",
+        "company": "Nex Energy",
+        "period": "fev 2026 - atual",
+        "description": "Depois de quase um ano como estagiário, fui efetivado para continuar trabalhando nos produtos da Nex. Hoje participo de problemas maiores e decisões técnicas, construindo desde modelos de dados e APIs até interfaces e integrações.",
+        "stack": ["Elixir", "Phoenix", "React", "PostgreSQL"]
+      },
+      {
+        "role": "Estagiário de Desenvolvimento Full Stack",
+        "company": "Nex Energy",
+        "period": "mar 2025 - fev 2026",
+        "description": "Foi onde ser desenvolvedor deixou de ser apenas um sonho e virou trabalho de verdade. Entreguei features em produção, participei de code reviews e aprendi a trabalhar em equipe com um código que não pode perder qualidade para \"apenas funcionar\".",
+        "stack": ["Elixir", "Phoenix", "React", "PostgreSQL"]
+      },
+      {
+        "role": "Aprendiz - Assistente Administrativo",
+        "company": "Prodiet Medical Nutrition",
+        "period": "mar 2023 - jun 2024",
+        "description": "Antes de ser dev, aprendi o essencial para trabalhar em qualquer empresa. Organização, responsabilidade, comunicação e rotina acabaram se tornando tão importantes quanto as habilidades técnicas.",
+        "stack": []
+      }
+    ]
+  },
+
+  "skills": {
+    "kicker": "Meu kit",
+    "title": "Tecnologia que faz parte do meu dia a dia",
+    "groups": {
+      "frontend": "Onde o usuário toca",
+      "backend": "Onde a lógica acontece",
+      "data": "Onde os dados vivem",
+      "tools": "O que mantém tudo funcionando"
+    }
+  },
+
   "projects": {
-    "title": "Projetos",
-    "doAndBuild": {
-      "name": "Do And Build",
-      "description": "Site de produtividade e organização, onde os usuários constroem e compartilham pastas!",
-      "features": {
-        "database": "Banco de dados Postgresql",
-        "auth": "Sistema completo de registro/login com Spring Security e JWT",
-        "folders": "Criação de pastas de tarefas/estudos como um roadmap",
-        "tasks": "Criação de tarefas com links de apoio",
-        "clone": "Clone de pastas públicas para si",
-        "likes": "Sistema de likes nas pastas públicas",
-        "house": "Uma casa é construída conforme você completa suas tarefas!"
-      }
-    },
-    "podpatoFrontend": {
-      "name": "PodPato (Versão Front-end)",
-      "description": "Site para ver os melhores podcasts do Youtube!",
-      "features": {
-        "stack": "Front-End: HTML, CSS, JavaScript",
-        "api": "API do Youtube",
-        "modals": "Modais do Bootstrap",
-        "javascript": "Bastante JavaScript para controle da API, resultando em um site com muitas funcionalidades dentro dos podcasts",
-        "saved": "Sistema de vídeos salvos",
-        "history": "Sistema de histórico de vídeos"
-      }
-    },
-    "podpatoFullstack": {
-      "name": "PodPato (Front e Back)",
-      "description": "Tudo que a versão somente front-end entrega, porém com sistema de criação e login de contas, sistema de likes e comentários em cada podcast com banco de dados MongoDB!",
-      "features": {
-        "nodejs": "Utiliza diversos módulos do Node.js",
-        "accounts": "Sistema de contas com e-mail e senha, registro e login",
-        "mongodb": "Aplicação com Banco de dados MongoDB, sendo controlado através do Mongoose",
-        "passport": "Autenticação com o módulo Passport",
-        "likes": "Sistema de Likes e Dislikes",
-        "comments": "Sistema de comentários, que podem ser criados, editados e excluídos",
-        "savedHistory": "Salvos e Histórico dos podcasts em conjunto com a conta logada"
-      }
-    },
-    "ticTacToe": {
-      "name": "Jogo da Velha",
-      "description": "Jogo da velha criado utilizando a framework React!",
-      "features": {
-        "components": "Trabalha com o sistema de componentes do React",
-        "hooks": "Utiliza os Hooks disponibilizados pela framework (States e Effects)",
-        "choice": "Os jogadores escolhem X ou O antes de jogar",
-        "nicks": "Os jogadores podem mudar seus nicks",
-        "restart": "Quando o jogo acaba, pode ser reiniciado"
+    "kicker": "Meus Projetos",
+    "title": "Coisas que construí ao longo da minha jornada tecnológica",
+    "intro": "Meus projetos pessoais são meu laboratório. Nem todos nasceram para virar produto. Alguns nasceram simplesmente porque eu queria descobrir como alguma coisa funcionava.",
+    "visit": "Abrir projeto",
+    "items": {
+      "doAndBuild": {
+        "name": "Do And Build",
+        "description": "Uma mistura de produtividade, aprendizado e gamificação. Usuários montam roadmaps de estudo, organizam tarefas em pastas e constroem uma casa conforme avançam.",
+        "highlights": [
+          "Autenticação completa com Spring Security e JWT",
+          "Pastas públicas, likes e clonagem de roadmaps",
+          "Progresso transformado em uma casa que evolui junto com o usuário"
+        ]
+      },
+      "podpatoFullstack": {
+        "name": "PodPato - Full Stack",
+        "description": "O projeto que começou como um simples agregador de podcasts e acabou virando um exercício completo de desenvolvimento web, com usuários, persistência, interação e evolução de arquitetura.",
+        "highlights": [
+          "Autenticação e contas de usuário com Passport",
+          "Comentários com ciclo completo de criação, edição e exclusão",
+          "Salvos e histórico persistidos com MongoDB"
+        ]
+      },
+      "podpatoFrontend": {
+        "name": "PodPato - Front-end",
+        "description": "A primeira versão do PodPato e um dos projetos que marcaram minha fase de aprendizado com JavaScript. Sem framework, sem abstrações demais: HTML, CSS, JavaScript e a API do YouTube.",
+        "highlights": [
+          "Integração direta com a API do YouTube",
+          "Persistência de vídeos salvos e histórico no navegador",
+          "Aplicação construída inteiramente com JavaScript vanilla"
+        ]
+      },
+      "ticTacToe": {
+        "name": "Jogo da Velha",
+        "description": "Um projeto pequeno, mas intencional. Usei um jogo simples para praticar React de verdade: componentes, estado, efeitos e interação entre diferentes partes da interface.",
+        "highlights": [
+          "Componentização e hooks",
+          "Escolha de símbolo e apelido pelos jogadores",
+          "Fluxo completo de partida e revanche"
+        ]
       }
     }
   },
+
+  "writing": {
+    "kicker": "Onde estou evoluindo",
+    "title": "Escrevo para consolidar e compartilhar conhecimento",
+    "lead": "Gosto muito de escrever artigos relacionados à tecnologia. Normalmente os textos surgem após eu passar por um desafio, terminar um projeto ou aprender alguma coisa nova. Acredito que escrever é, além de compartilhar, também uma excelente forma de consolidar conhecimento.",
+    "medium": "Textos sobre desenvolvimento, ferramentas, arquitetura e coisas que aprendi construindo software no dia a dia.",
+    "substack": "Um espaço mais pessoal para falar sobre carreira, aprendizado e a experiência de construir uma trajetória em tecnologia.",
+    "action": "Ler no"
+  },
+
+  "contact": {
+    "kicker": "Contato",
+    "title": "Tem alguma coisa para construir?",
+    "lead": "Se você quer conversar sobre desenvolvimento, algum projeto, tecnologia ou simplesmente trocar uma ideia, pode me chamar. Gosto de boas conversas tanto quanto de bons problemas para resolver.",
+    "cta": "Me mande um e-mail",
+    "or": "ou me encontre em"
+  },
+
   "footer": {
-    "contact": "Contato via:",
-    "email": "e-mail:"
+    "rights": "Todos os direitos reservados.",
+    "built": "Construído com Next.js, Tailwind CSS e Motion"
+  },
+
+  "a11y": {
+    "backToTop": "Voltar ao topo"
   }
 }
