@@ -42,7 +42,7 @@ const Navbar = () => {
           ))}
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-5">
           <a
             href={site.github}
             target="_blank"
@@ -50,7 +50,7 @@ const Navbar = () => {
             aria-label="GitHub"
             className="text-mute transition-colors hover:text-ink"
           >
-            <FaGithub size={18} />
+            <FaGithub size={26} />
           </a>
           <a
             href={site.linkedin}
@@ -59,7 +59,7 @@ const Navbar = () => {
             aria-label="LinkedIn"
             className="text-mute transition-colors hover:text-ink"
           >
-            <FaLinkedin size={18} />
+            <FaLinkedin size={26} />
           </a>
           <LanguageSwitcher />
         </div>

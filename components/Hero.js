@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { useTranslation } from "next-i18next";
 import { FaGithub, FaLinkedin, FaMedium } from "react-icons/fa6";
 import { SiSubstack } from "react-icons/si";
-import { LuArrowDown, LuMail, LuMapPin } from "react-icons/lu";
+import { LuArrowDown, LuMail } from "react-icons/lu";
 import { site } from "../lib/site";
 
 const EASE = [0.21, 0.47, 0.32, 0.98];
@@ -54,12 +54,25 @@ const Hero = () => {
             variants={item}
             className="mt-6 font-display text-5xl font-bold tracking-tight text-ink sm:text-6xl lg:text-7xl"
           >
-            Felipe <span className="text-gradient">Laskos</span>
+            Felipe Laskos
           </motion.h1>
+
+          <motion.div variants={item} className="mt-3 inline-flex flex-col items-center lg:items-start">
+            <p className="text-gradient font-display text-3xl font-bold tracking-tight sm:text-4xl lg:text-[2.75rem]">
+              {t("hero.role")}
+            </p>
+            <div className="relative mt-2 h-[3px] w-full overflow-hidden rounded-full bg-line">
+              <motion.span
+                className="absolute inset-y-0 w-1/3 rounded-full bg-linear-to-r from-accent to-glow"
+                animate={{ x: ["-110%", "310%"] }}
+                transition={{ duration: 2.6, repeat: Infinity, repeatDelay: 1.8, ease: "easeInOut" }}
+              />
+            </div>
+          </motion.div>
 
           <motion.p
             variants={item}
-            className="mt-4 font-display text-xl font-medium text-ink/90 sm:text-2xl"
+            className="mt-5 font-display text-lg font-medium text-ink/90 sm:text-xl"
           >
             {t("hero.tagline")}
           </motion.p>
@@ -96,11 +109,6 @@ const Hero = () => {
                 <Icon size={20} />
               </a>
             ))}
-            <span className="hidden h-4 w-px bg-line sm:block" aria-hidden="true" />
-            <span className="hidden items-center gap-1.5 font-mono text-xs text-mute sm:flex">
-              <LuMapPin size={14} className="text-accent" />
-              {t("hero.location")}
-            </span>
           </motion.div>
         </motion.div>
 
