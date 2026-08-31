@@ -25,7 +25,7 @@ const BackToTop = () => {
           transition={{ duration: 0.25 }}
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           aria-label={t("a11y.backToTop")}
-          className="fixed bottom-6 right-6 z-40 cursor-pointer rounded-full border border-line bg-surface/80 p-3 text-mute backdrop-blur transition-colors hover:border-accent/50 hover:text-accent-strong"
+          className="fixed bottom-6 right-6 z-40 cursor-pointer rounded-full border border-line bg-surface/80 p-3 text-mute backdrop-blur transition-colors hover:border-dim/60 hover:text-teal-ink"
         >
           <LuArrowUp size={18} />
         </motion.button>

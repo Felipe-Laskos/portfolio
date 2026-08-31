@@ -2,6 +2,7 @@ import { useTranslation } from "next-i18next";
 import { LuArrowUpRight } from "react-icons/lu";
 import Section from "./Section";
 import Reveal from "./Reveal";
+import Deco from "./Deco";
 
 const PROJECTS = [
   {
@@ -43,6 +44,7 @@ const Projects = () => {
       kicker={t("projects.kicker")}
       title={t("projects.title")}
       lead={t("projects.intro")}
+      deco={<Deco className="right-12 top-20 text-[4.5rem] text-deco-blue/60">{"[ ]"}</Deco>}
     >
       <div className="grid gap-6 md:grid-cols-2">
         {PROJECTS.map(({ key, video, poster, link, tech }, i) => {
@@ -52,7 +54,7 @@ const Projects = () => {
 
           return (
             <Reveal key={key} delay={(i % 2) * 0.08} className="h-full">
-              <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-line bg-surface/60 transition-all hover:-translate-y-1 hover:border-accent/40">
+              <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-line bg-surface/60 transition-all hover:-translate-y-1 hover:border-dim/50">
                 <video
                   src={video}
                   poster={poster ?? undefined}
@@ -65,15 +67,15 @@ const Projects = () => {
                   <h3 className="font-display text-xl font-semibold text-ink">
                     {t(`projects.items.${key}.name`)}
                   </h3>
-                  <p className="mt-2 leading-relaxed text-mute">
+                  <p className="mt-2 leading-relaxed text-ink/75">
                     {t(`projects.items.${key}.description`)}
                   </p>
 
                   {Array.isArray(highlights) && (
                     <ul className="mt-4 space-y-1.5">
                       {highlights.map((h) => (
-                        <li key={h} className="flex gap-2 text-sm text-mute">
-                          <span className="mt-0.5 text-accent" aria-hidden="true">
+                        <li key={h} className="flex gap-2 text-sm text-ink/70">
+                          <span className="mt-0.5 text-dim" aria-hidden="true">
                             ▸
                           </span>
                           {h}
@@ -97,7 +99,7 @@ const Projects = () => {
                     href={link}
                     target="_blank"
                     rel="noreferrer"
-                    className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-semibold text-accent-strong transition-colors hover:text-glow"
+                    className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-semibold text-teal-ink transition-colors hover:text-ink"
                   >
                     {t("projects.visit")}
                     <LuArrowUpRight
