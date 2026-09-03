@@ -21,6 +21,7 @@ import {
 } from "react-icons/si";
 import Section from "./Section";
 import Reveal from "./Reveal";
+import Deco from "./Deco";
 
 const GROUPS = [
   {
@@ -67,12 +68,17 @@ const Skills = () => {
   const { t } = useTranslation("common");
 
   return (
-    <Section id="skills" kicker={t("skills.kicker")} title={t("skills.title")}>
+    <Section
+      id="skills"
+      kicker={t("skills.kicker")}
+      title={t("skills.title")}
+      deco={<Deco className="bottom-16 right-12 text-[4.5rem] text-deco-violet/60">{"&&"}</Deco>}
+    >
       <div className="grid gap-5 sm:grid-cols-2">
         {GROUPS.map(({ key, items }, i) => (
           <Reveal key={key} delay={i * 0.07}>
-            <div className="h-full rounded-2xl border border-line bg-surface/60 p-6 transition-colors hover:border-accent/40">
-              <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-accent">
+            <div className="h-full rounded-2xl border border-line bg-surface/60 p-6 transition-colors hover:border-dim/50">
+              <h3 className="font-mono text-xs uppercase tracking-[0.17em] text-teal-ink">
                 {t(`skills.groups.${key}`)}
               </h3>
               <div className="mt-4 flex flex-wrap gap-2.5">
@@ -81,7 +87,7 @@ const Skills = () => {
                     key={label}
                     className="flex items-center gap-2 rounded-lg border border-line bg-raised/70 px-3 py-2 text-sm text-ink/90"
                   >
-                    <Icon size={15} className="text-accent-strong" />
+                    <Icon size={15} className="text-blue" />
                     {label}
                   </span>
                 ))}

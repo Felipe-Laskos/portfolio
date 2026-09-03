@@ -27,7 +27,7 @@ const Navbar = () => {
     >
       <nav className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-6">
         <a href="#top" className="font-display text-lg font-bold tracking-tight text-ink">
-          felipe<span className="text-accent">.laskos</span>
+          felipe<span className="text-teal-ink">.laskos</span>
         </a>
 
         <div className="hidden items-center gap-7 md:flex">

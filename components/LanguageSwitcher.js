@@ -17,7 +17,7 @@ const LanguageSwitcher = () => {
           onClick={() => changeLanguage(l)}
           className={`cursor-pointer rounded-full px-2.5 py-1 uppercase transition-colors ${
             locale === l
-              ? "bg-accent/20 text-accent-strong"
+              ? "bg-raised-2 text-ink"
               : "text-mute hover:text-ink"
           }`}
         >

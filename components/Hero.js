@@ -3,6 +3,7 @@ import { useTranslation } from "next-i18next";
 import { FaGithub, FaLinkedin, FaMedium } from "react-icons/fa6";
 import { SiSubstack } from "react-icons/si";
 import { LuArrowDown, LuMail } from "react-icons/lu";
+import Deco from "./Deco";
 import { site } from "../lib/site";
 
 const EASE = [0.21, 0.47, 0.32, 0.98];
@@ -31,6 +32,24 @@ const Hero = () => {
   return (
     <section id="top" className="hero-bg relative overflow-hidden">
       <div className="bg-grid absolute inset-0" aria-hidden="true" />
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute left-4 top-24 hidden select-none font-mono text-[11rem] font-medium leading-none text-brace/45 lg:block"
+      >
+        {"{"}
+      </span>
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute bottom-14 right-6 hidden select-none font-mono text-[11rem] font-medium leading-none text-brace-2/55 lg:block"
+      >
+        {"}"}
+      </span>
+      <Deco className="right-44 top-28 text-4xl text-deco-blue/70">{"[ ]"}</Deco>
+      <Deco className="right-72 top-44 text-3xl text-deco-violet/70">{"=>"}</Deco>
+      <Deco className="right-28 top-52 text-2xl text-deco-violet/60">{"//"}</Deco>
+      <Deco className="right-16 top-72 text-xl text-deco-violet/50">01</Deco>
+      <Deco className="bottom-40 left-10 text-2xl text-deco-violet/60">{"&&"}</Deco>
+      <Deco className="bottom-28 left-32 text-xl text-deco-violet/50">10</Deco>
 
       <div className="relative mx-auto flex min-h-svh w-full max-w-6xl flex-col-reverse items-center justify-center gap-12 px-6 pb-20 pt-28 lg:flex-row lg:justify-between lg:gap-8">
         <motion.div
@@ -44,8 +63,8 @@ const Hero = () => {
             className="flex items-center gap-2 rounded-full border border-line bg-surface/70 px-4 py-1.5 font-mono text-xs text-mute"
           >
             <span className="relative flex size-2">
-              <span className="absolute inline-flex size-full animate-ping rounded-full bg-accent opacity-60" />
-              <span className="relative inline-flex size-2 rounded-full bg-accent" />
+              <span className="absolute inline-flex size-full animate-ping rounded-full bg-teal opacity-60" />
+              <span className="relative inline-flex size-2 rounded-full bg-teal" />
             </span>
             {t("hero.badge")}
           </motion.div>
@@ -63,7 +82,7 @@ const Hero = () => {
             </p>
             <div className="relative mt-2 h-[3px] w-full overflow-hidden rounded-full bg-line">
               <motion.span
-                className="absolute inset-y-0 w-1/3 rounded-full bg-linear-to-r from-accent to-glow"
+                className="absolute inset-y-0 w-1/3 rounded-full bg-linear-to-r from-teal to-blue"
                 animate={{ x: ["-110%", "310%"] }}
                 transition={{ duration: 2.6, repeat: Infinity, repeatDelay: 1.8, ease: "easeInOut" }}
               />
@@ -77,20 +96,20 @@ const Hero = () => {
             {t("hero.tagline")}
           </motion.p>
 
-          <motion.p variants={item} className="mt-5 max-w-xl leading-relaxed text-mute">
+          <motion.p variants={item} className="mt-5 max-w-xl leading-relaxed text-ink/75">
             {t("hero.pitch")}
           </motion.p>
 
           <motion.div variants={item} className="mt-8 flex flex-wrap items-center justify-center gap-4 lg:justify-start">
             <a
               href="#projects"
-              className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-bg transition-all hover:-translate-y-0.5 hover:bg-accent-strong"
+              className="rounded-full bg-linear-to-r from-teal to-blue px-6 py-3 text-sm font-semibold text-bg transition-all hover:-translate-y-0.5 hover:brightness-110"
             >
               {t("hero.ctaProjects")}
             </a>
             <a
               href="#contact"
-              className="rounded-full border border-line bg-surface/60 px-6 py-3 text-sm font-semibold text-ink transition-all hover:-translate-y-0.5 hover:border-accent/50"
+              className="rounded-full border border-line bg-surface/60 px-6 py-3 text-sm font-semibold text-ink transition-all hover:-translate-y-0.5 hover:border-dim/60"
             >
               {t("hero.ctaContact")}
             </a>
@@ -104,7 +123,7 @@ const Hero = () => {
                 target={href.startsWith("mailto:") ? undefined : "_blank"}
                 rel="noreferrer"
                 aria-label={label}
-                className="text-mute transition-all hover:-translate-y-0.5 hover:text-accent-strong"
+                className="text-mute transition-all hover:-translate-y-0.5 hover:text-teal-ink"
               >
                 <Icon size={20} />
               </a>
@@ -118,8 +137,8 @@ const Hero = () => {
           transition={{ duration: 0.7, ease: EASE, delay: 0.2 }}
           className="relative shrink-0"
         >
-          <div className="absolute -inset-8 rounded-full bg-accent/20 blur-3xl" aria-hidden="true" />
-          <div className="relative size-52 rounded-full bg-linear-to-br from-accent via-accent/30 to-glow p-1 sm:size-64 lg:size-72">
+          <div className="absolute -inset-8 rounded-full bg-brace/25 blur-3xl" aria-hidden="true" />
+          <div className="relative size-52 rounded-full bg-linear-to-br from-teal via-blue to-violet p-1 sm:size-64 lg:size-72">
             <img
               src="/img/felipe-laskos.jpg"
               alt={t("hero.photoAlt")}
